@@ -69,7 +69,7 @@ app.post('/envio-mail', async (req, res) => {
             subject: 'Futuro',
             html: `
             <p>¡Aquí está la carta seleccionada!</p>
-            <img src="${API_BASE_URL}/card-image?email=${email}&random=${Math.random()}" alt="Carta seleccionada">
+            <img src="${API_BASE_URL}card-image?email=${email}&random=${Math.random()}" alt="Carta seleccionada">
             `,
         });
 
