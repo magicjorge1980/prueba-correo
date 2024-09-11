@@ -5,6 +5,10 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'path';
 
+import 'dotenv/config'
+
+const { API_BASE_URL } = process.env
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const app = express();
@@ -65,7 +69,7 @@ app.post('/envio-mail', async (req, res) => {
             subject: 'Futuro',
             html: `
             <p>¡Aquí está la carta seleccionada!</p>
-            <img src="https://prueba-correo-icu8.onrender.com/card-image?email=${email}&random=${Math.random()}" alt="Carta seleccionada">
+            <img src="API_BASE_URL/card-image?email=${email}&random=${Math.random()}" alt="Carta seleccionada">
             `,
         });
 
