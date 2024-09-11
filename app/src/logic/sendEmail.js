@@ -1,6 +1,6 @@
 async function sendEmail(email) {
     try {
-        const response = await fetch('http://localhost:3000/envio-mail', {
+        const response = await fetch('https://prueba-correo-icu8.onrender.com/envio-mail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

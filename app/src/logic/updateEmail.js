@@ -1,6 +1,6 @@
 async function updateEmail(email, card) {
     try {
-        const response = await fetch('http://localhost:3000/select-card', {
+        const response = await fetch('https://prueba-correo-icu8.onrender.com/select-card', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

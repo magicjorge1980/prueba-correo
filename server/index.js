@@ -65,7 +65,7 @@ app.post('/envio-mail', async (req, res) => {
             subject: 'Futuro',
             html: `
             <p>¡Aquí está la carta seleccionada!</p>
-            <img src="https://6465-2a0c-5a82-e10a-4200-e94d-a9ef-87d3-1378.ngrok-free.app/card-image?email=${email}&random=${Math.random()}" alt="Carta seleccionada">
+            <img src="https://prueba-correo-icu8.onrender.com/card-image?email=${email}&random=${Math.random()}" alt="Carta seleccionada">
             `,
         });
 
