@@ -24,7 +24,6 @@ function Form() {
     console.log(email, card)
     updateEmail(email, card)
     setShowForm(true)
-    setShowCards(false)
   }
 
   return (

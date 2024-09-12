@@ -55,7 +55,7 @@ app.get('/card-image', async (req, res) => {
         const card = userCard ? userCard.card : 'unknown';
         console.log('Card:', card);
 
-        const imagePath = path.join(__dirname, 'cards', `${card}.avif`);
+        const imagePath = path.join(__dirname, 'cards', `${card}.jpg`);
         console.log('Image Path:', imagePath);
 
         res.sendFile(imagePath, (err) => {
