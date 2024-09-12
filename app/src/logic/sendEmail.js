@@ -1,6 +1,6 @@
 async function sendEmail(email) {
     try {
-        const response = await fetch('https://prueba-correo-icu8.onrender.com/envio-mail', {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}envio-mail`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
